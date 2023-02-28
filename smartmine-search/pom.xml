@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 指定父项目 -->
+    <parent>
+        <groupId>com.muying</groupId>
+        <artifactId>smartmine</artifactId>
+        <version>${revision}</version>
+    </parent>
+
+    <!-- 指定打包方式 -->
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>smartmine-search-api</module>
+        <module>smartmine-search-biz</module>
+    </modules>
+
+    <artifactId>smartmine-search</artifactId>
+    <name>${project.artifactId}</name>
+    <description>搜索服务</description>
+
+</project>
