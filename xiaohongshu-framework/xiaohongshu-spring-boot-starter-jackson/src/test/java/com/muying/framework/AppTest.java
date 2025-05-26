@@ -1,4 +1,4 @@
-package com.muying.xiaohongshu.oss.biz;
+package com.muying.framework;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

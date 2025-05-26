@@ -37,3 +37,18 @@ build/
 ### Mac OS ###
 .DS_Store
 /logs/auth.2025-05-25-0.log
+/xiaohongshu-auth/.flattened-pom.xml
+/xiaohongshu-framework/xiaohongshu-common/.flattened-pom.xml
+/xiaohongshu-framework/xiaohongshu-spring-boot-starter-biz-operationlog/.flattened-pom.xml
+/xiaohongshu-framework/.flattened-pom.xml
+/xiaohongshu-gateway/.flattened-pom.xml
+/.flattened-pom.xml
+/.idea/.gitignore
+/xiaohongshu-auth/logs/auth.2025-05-25-0.log
+/logs/auth.2025-05-26-0.log
+/.idea/checkstyle-idea.xml
+/.idea/encodings.xml
+/.idea/misc.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
