@@ -41,5 +41,5 @@ spring:
 
 logging:
   level:
-    com.quanxiaoha.xiaohashu.user.biz.domain.mapper: debug
+    com.muying.xiaohongshu.user.biz.domain.mapper: debug
 
