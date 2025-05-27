@@ -16,6 +16,26 @@
     <description>用户服务业务模块</description>
 
     <dependencies>
+        <dependency>
+            <groupId>com.muying</groupId>
+            <artifactId>xiaohongshu-user-api</artifactId>
+        </dependency>
+        <!-- Redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!-- Redis 连接池 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.muying</groupId>
+            <artifactId>xiaohongshu-oss-api</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>com.muying</groupId>
@@ -79,24 +99,7 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-3-starter</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.muying</groupId>
-            <artifactId>xiaohongshu-spring-boot-starter-biz-context</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.muying</groupId>
-            <artifactId>xiaohongshu-spring-boot-starter-biz-context</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.muying</groupId>
-            <artifactId>xiaohongshu-spring-boot-starter-biz-context</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
+
 
     </dependencies>
 

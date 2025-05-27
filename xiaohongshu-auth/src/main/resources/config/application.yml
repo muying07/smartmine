@@ -7,9 +7,6 @@ spring:
   lifecycle:
     timeout-per-shutdown-phase: 20s # 设置关闭超时时间
 
-mybatis:
-  # MyBatis xml 配置文件路径
-  mapper-locations: classpath:/mapper/**/*.xml
 
 ############## Sa-Token 配置 (文档: https://sa-token.cc) ##############
 sa-token:
@@ -30,11 +27,5 @@ sa-token:
   # 是否输出操作日志
   is-log: true
 
-rate-limit:
-  api:
-    limit: 100 # 接口限流阈值
 
 
-
-alarm:
-  type: sms # 告警类型

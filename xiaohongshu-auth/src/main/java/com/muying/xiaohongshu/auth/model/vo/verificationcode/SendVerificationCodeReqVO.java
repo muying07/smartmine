@@ -1,13 +1,12 @@
 package com.muying.xiaohongshu.auth.model.vo.verificationcode;
 
-import com.muying.xiaohongshu.auth.validator.PhoneNumber;
+import com.muying.framework.common.validator.PhoneNumber;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.validator.constraints.Length;
 
 @Data
 @AllArgsConstructor

@@ -1,1 +1,2 @@
 com.muying.framework.biz.context.config.ContextAutoConfiguration
+com.muying.framework.biz.context.config.FeignContextAutoConfiguration

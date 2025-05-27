@@ -1,6 +1,6 @@
 package com.muying.xiaohongshu.auth.model.vo.user;
 
-import com.muying.xiaohongshu.auth.validator.PhoneNumber;
+import com.muying.framework.common.validator.PhoneNumber;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

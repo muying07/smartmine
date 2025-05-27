@@ -3,9 +3,10 @@ package com.muying.xiaohongshu.auth;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@MapperScan("com.muying.xiaohongshu.auth.domain.mapper")
+@EnableFeignClients(basePackages = "com.muying.xiaohongshu")
 public class XiaohongshuAuthApplication {
 
     public static void main(String[] args) {
