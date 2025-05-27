@@ -25,6 +25,7 @@
     <!-- 对象存储服务 -->
     <module>xiaohongshu-oss</module>
     <module>xiaohongshu-user</module>
+      <module>xiaohongshu-kv</module>
   </modules>
 
   <properties>
@@ -68,6 +69,11 @@
   <!-- 统一依赖管理 -->
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>com.muying</groupId>
+        <artifactId>xiaohongshu-kv-api</artifactId>
+        <version>${revision}</version>
+      </dependency>
       <dependency>
         <groupId>com.muying</groupId>
         <artifactId>xiaohongshu-user-api</artifactId>
