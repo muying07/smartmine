@@ -2,15 +2,14 @@ package com.muying.xiaohongshu.user.api;
 
 import com.muying.framework.common.response.Response;
 import com.muying.xiaohongshu.user.constant.ApiConstants;
-import com.muying.xiaohongshu.user.dto.req.FindUserByIdReqDTO;
-import com.muying.xiaohongshu.user.dto.req.FindUserByPhoneReqDTO;
-import com.muying.xiaohongshu.user.dto.req.RegisterUserReqDTO;
-import com.muying.xiaohongshu.user.dto.req.UpdateUserPasswordReqDTO;
+import com.muying.xiaohongshu.user.dto.req.*;
 import com.muying.xiaohongshu.user.dto.resp.FindUserByIdRspDTO;
 import com.muying.xiaohongshu.user.dto.resp.FindUserByPhoneRspDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+
+import java.util.List;
 
 @FeignClient(name = ApiConstants.SERVICE_NAME)
 public interface UserFeignApi {
@@ -52,4 +51,13 @@ public interface UserFeignApi {
      */
     @PostMapping(value = PREFIX + "/findById")
     Response<FindUserByIdRspDTO> findById(@RequestBody FindUserByIdReqDTO findUserByIdReqDTO);
+
+    /**
+     * 批量查询用户信息
+     *
+     * @param findUsersByIdsReqDTO
+     * @return
+     */
+    @PostMapping(value = PREFIX + "/findByIds")
+    Response<List<FindUserByIdRspDTO>> findByIds(@RequestBody FindUsersByIdsReqDTO findUsersByIdsReqDTO);
 }

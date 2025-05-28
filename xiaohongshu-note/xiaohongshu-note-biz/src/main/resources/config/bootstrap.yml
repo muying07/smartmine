@@ -1,9 +1,10 @@
 spring:
   application:
-    name: xiaohashu-note # 应用名称
+    name: xiaohongshu-note # 应用名称
   profiles:
     active: dev # 默认激活 dev 本地开发环境
   cloud:
+    nacos:
       discovery:
         enabled: true # 启用服务发现
         group: DEFAULT_GROUP # 所属组

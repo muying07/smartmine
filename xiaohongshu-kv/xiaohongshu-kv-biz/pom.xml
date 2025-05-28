@@ -18,16 +18,12 @@
     <dependencies>
         <dependency>
             <groupId>com.muying</groupId>
-            <artifactId>xiaohongshu-kv-api</artifactId>
+            <artifactId>xiaohongshu-common</artifactId>
         </dependency>
-        <!-- Cassandra 存储 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-cassandra</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>com.muying</groupId>
-            <artifactId>xiaohongshu-common</artifactId>
+            <artifactId>xiaohongshu-kv-api</artifactId>
         </dependency>
 
         <dependency>
@@ -39,6 +35,23 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+
+        <!-- 服务发现 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+        <!-- Cassandra 存储 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-cassandra</artifactId>
         </dependency>
 
     </dependencies>

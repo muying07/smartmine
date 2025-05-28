@@ -17,4 +17,5 @@ spring:
 aliyun: # 接入阿里云（发送短信使用）
   accessKeyId: LTAI5tJCWNaFE9R53TfB7xkb # 填写你自己的
   accessKeySecret: KI9t93JUgUHXDqowfY3jVetSJwZb9h # 填写你自己的
-
+alarm:
+  type: mail

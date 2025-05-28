@@ -2,12 +2,11 @@ package com.muying.xiaohongshu.user.biz.service;
 
 import com.muying.xiaohongshu.user.biz.model.vo.UpdateUserInfoReqVO;
 import com.muying.framework.common.response.Response;
-import com.muying.xiaohongshu.user.dto.req.FindUserByIdReqDTO;
-import com.muying.xiaohongshu.user.dto.req.FindUserByPhoneReqDTO;
-import com.muying.xiaohongshu.user.dto.req.RegisterUserReqDTO;
-import com.muying.xiaohongshu.user.dto.req.UpdateUserPasswordReqDTO;
+import com.muying.xiaohongshu.user.dto.req.*;
 import com.muying.xiaohongshu.user.dto.resp.FindUserByIdRspDTO;
 import com.muying.xiaohongshu.user.dto.resp.FindUserByPhoneRspDTO;
+
+import java.util.List;
 
 /**
  * @description: 用户业务
@@ -50,5 +49,13 @@ public interface UserService {
      * @return
      */
     Response<FindUserByIdRspDTO> findById(FindUserByIdReqDTO findUserByIdReqDTO);
+
+    /**
+     * 批量根据用户 ID 查询用户信息
+     *
+     * @param findUsersByIdsReqDTO
+     * @return
+     */
+    Response<List<FindUserByIdRspDTO>> findByIds(FindUsersByIdsReqDTO findUsersByIdsReqDTO);
 }
 
