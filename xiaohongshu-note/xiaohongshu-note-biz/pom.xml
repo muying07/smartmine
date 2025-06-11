@@ -16,6 +16,12 @@
     <description>笔记服务业务层</description>
 
     <dependencies>
+
+        <!-- Rocket MQ 客户端 -->
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-client</artifactId>
+        </dependency>
         <!-- Rocket MQ -->
         <dependency>
             <groupId>org.apache.rocketmq</groupId>

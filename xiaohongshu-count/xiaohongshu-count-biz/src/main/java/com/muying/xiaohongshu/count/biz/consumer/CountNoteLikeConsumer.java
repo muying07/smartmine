@@ -31,8 +31,8 @@ import java.util.stream.Collectors;
  * @description: 计数: 笔记点赞数
  **/
 @Component
-@RocketMQMessageListener(consumerGroup = "xiaohongshu_group_" + MQConstants.TOPIC_COUNT_NOTE_LIKE, // Group 组
-        topic = MQConstants.TOPIC_COUNT_NOTE_LIKE // 主题 Topic
+@RocketMQMessageListener(consumerGroup = "xiaohongshu_group_" + MQConstants.TOPIC_LIKE_OR_UNLIKE, // Group 组
+        topic = MQConstants.TOPIC_LIKE_OR_UNLIKE // 主题 Topic
 )
 @Slf4j
 public class CountNoteLikeConsumer implements RocketMQListener<String> {

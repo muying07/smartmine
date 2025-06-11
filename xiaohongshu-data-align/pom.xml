@@ -17,6 +17,10 @@
     <description>数据对齐服务</description>
 
     <dependencies>
+        <dependency>
+            <groupId>com.muying</groupId>
+            <artifactId>xiaohongshu-search-api</artifactId>
+        </dependency>
         <!-- Jackson 组件 -->
         <dependency>
             <groupId>com.muying</groupId>

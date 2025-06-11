@@ -31,6 +31,8 @@
         <module>xiaohongshu-user-relation</module>
         <module>xiaohongshu-count</module>
         <module>xiaohongshu-data-align</module>
+        <module>xiaohongshu-search</module>
+        <module>xiaohongshu-comment</module>
     </modules>
 
     <properties>
@@ -73,11 +75,57 @@
         <rocketmq.version>2.2.3</rocketmq.version>
         <buffertrigger.version>0.2.21</buffertrigger.version>
         <xxl-job.version>2.4.1</xxl-job.version>
+        <elasticsearch.version>7.3.0</elasticsearch.version>
+        <canal.version>1.1.7</canal.version>
+        <rocketmq-client.version>4.9.4</rocketmq-client.version>
     </properties>
 
     <!-- 统一依赖管理 -->
     <dependencyManagement>
         <dependencies>
+            <!-- Rocket MQ 客户端 -->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-client</artifactId>
+                <version>${rocketmq-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.muying</groupId>
+                <artifactId>xiaohongshu-search-api</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <!-- Canal -->
+            <dependency>
+                <groupId>com.alibaba.otter</groupId>
+                <artifactId>canal.client</artifactId>
+                <version>${canal.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.otter</groupId>
+                <artifactId>canal.common</artifactId>
+                <version>${canal.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.otter</groupId>
+                <artifactId>canal.protocol</artifactId>
+                <version>${canal.version}</version>
+            </dependency>
+            <!-- Elasticsearch 分布式搜索引擎 -->
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-high-level-client</artifactId>
+                <version>${elasticsearch.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-client</artifactId>
+                <version>${elasticsearch.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch</groupId>
+                <artifactId>elasticsearch</artifactId>
+                <version>${elasticsearch.version}</version>
+            </dependency>
             <!-- XXL-JOB 分布式定时任务调度 -->
             <dependency>
                 <groupId>com.xuxueli</groupId>
