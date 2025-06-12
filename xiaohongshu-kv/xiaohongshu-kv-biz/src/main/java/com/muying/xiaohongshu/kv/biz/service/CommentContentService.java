@@ -3,6 +3,8 @@ package com.muying.xiaohongshu.kv.biz.service;
 import com.muying.xiaohongshu.kv.dto.req.BatchAddCommentContentReqDTO;
 import com.muying.xiaohongshu.kv.dto.req.BatchFindCommentContentReqDTO;
 import com.muying.framework.common.response.Response;
+import com.muying.xiaohongshu.kv.dto.req.DeleteCommentContentReqDTO;
+
 /**
  * @description: 评论内容存储业务
  **/
@@ -22,4 +24,11 @@ public interface CommentContentService {
      * @return
      */
     Response<?> batchFindCommentContent(BatchFindCommentContentReqDTO batchFindCommentContentReqDTO);
+
+    /**
+     * 删除评论内容
+     * @param deleteCommentContentReqDTO
+     * @return
+     */
+    Response<?> deleteCommentContent(DeleteCommentContentReqDTO deleteCommentContentReqDTO);
 }

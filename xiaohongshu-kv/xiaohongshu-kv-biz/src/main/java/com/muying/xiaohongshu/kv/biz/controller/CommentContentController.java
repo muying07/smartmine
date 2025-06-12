@@ -4,6 +4,7 @@ import com.muying.framework.common.response.Response;
 import com.muying.xiaohongshu.kv.biz.service.CommentContentService;
 import com.muying.xiaohongshu.kv.dto.req.BatchAddCommentContentReqDTO;
 import com.muying.xiaohongshu.kv.dto.req.BatchFindCommentContentReqDTO;
+import com.muying.xiaohongshu.kv.dto.req.DeleteCommentContentReqDTO;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
@@ -39,4 +40,10 @@ public class CommentContentController {
         return commentContentService.batchFindCommentContent(batchFindCommentContentReqDTO);
     }
 
+
+    @PostMapping(value = "/comment/content/delete")
+    @ApiOperationLog(description = "删除评论内容")
+    public Response<?> deleteCommentContent(@Validated @RequestBody DeleteCommentContentReqDTO deleteCommentContentReqDTO) {
+        return commentContentService.deleteCommentContent(deleteCommentContentReqDTO);
+    }
 }

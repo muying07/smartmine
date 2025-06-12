@@ -2,6 +2,8 @@ package com.muying.xiaohongshu.user.biz.controller;
 
 import com.muying.framework.biz.operationlog.aspect.ApiOperationLog;
 import com.muying.framework.common.response.Response;
+import com.muying.xiaohongshu.user.biz.model.vo.FindUserProfileReqVO;
+import com.muying.xiaohongshu.user.biz.model.vo.FindUserProfileRspVO;
 import com.muying.xiaohongshu.user.biz.model.vo.UpdateUserInfoReqVO;
 import com.muying.xiaohongshu.user.biz.service.UserService;
 import com.muying.xiaohongshu.user.dto.req.*;
@@ -38,6 +40,16 @@ public class UserController {
     @PostMapping(value = "/update", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Response<?> updateUserInfo(@Validated UpdateUserInfoReqVO updateUserInfoReqVO) {
         return userService.updateUserInfo(updateUserInfoReqVO);
+    }
+
+    /**
+     * 获取用户主页信息
+     *
+     * @return
+     */
+    @PostMapping(value = "/profile")
+    public Response<FindUserProfileRspVO> findUserProfile(@Validated @RequestBody FindUserProfileReqVO findUserProfileReqVO) {
+        return userService.findUserProfile(findUserProfileReqVO);
     }
 
     // ===================================== 对其他服务提供的接口 =====================================

@@ -11,7 +11,7 @@
     <!-- 打包方式 -->
     <packaging>jar</packaging>
 
-    <artifactId>xiaohashu-user-relation-biz</artifactId>
+    <artifactId>xiaohongshu-user-relation-biz</artifactId>
     <name>${project.artifactId}</name>
     <description>用户关系服务业务模块</description>
 

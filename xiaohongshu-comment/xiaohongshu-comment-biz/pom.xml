@@ -16,6 +16,11 @@
     <description>评论服务业务层</description>
 
     <dependencies>
+        <!-- Caffeine 本地缓存 -->
+        <dependency>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.muying</groupId>
             <artifactId>xiaohongshu-user-api</artifactId>

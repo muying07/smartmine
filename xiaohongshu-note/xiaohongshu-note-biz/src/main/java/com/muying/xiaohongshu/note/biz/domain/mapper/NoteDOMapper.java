@@ -1,6 +1,9 @@
 package com.muying.xiaohongshu.note.biz.domain.mapper;
 
 import com.muying.xiaohongshu.note.biz.domain.entity.NoteDO;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface NoteDOMapper {
     int deleteByPrimaryKey(Long id);
@@ -27,5 +30,14 @@ public interface NoteDOMapper {
      * @return
      */
     Long selectCreatorIdByNoteId(Long noteId);
+
+    /**
+     * 查询个人主页已发布笔记列表
+     * @param creatorId
+     * @param cursor
+     * @return
+     */
+    List<NoteDO> selectPublishedNoteListByUserIdAndCursor(@Param("creatorId") Long creatorId,
+                                                          @Param("cursor") Long cursor);
 
 }

@@ -16,37 +16,11 @@
     <description>用户服务业务模块</description>
 
     <dependencies>
-        <!-- Caffeine 本地缓存 -->
-        <dependency>
-            <groupId>com.github.ben-manes.caffeine</groupId>
-            <artifactId>caffeine</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.muying</groupId>
-            <artifactId>xiaohongshu-distributed-id-generator-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.muying</groupId>
-            <artifactId>xiaohongshu-kv-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.muying</groupId>
-            <artifactId>xiaohongshu-user-api</artifactId>
-        </dependency>
-        <!-- Redis -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
 
-        <!-- Redis 连接池 -->
+
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-pool2</artifactId>
+            <groupId>com.muying</groupId>
+            <artifactId>xiaohongshu-common</artifactId>
         </dependency>
 
         <dependency>
@@ -56,7 +30,17 @@
 
         <dependency>
             <groupId>com.muying</groupId>
-            <artifactId>xiaohongshu-common</artifactId>
+            <artifactId>xiaohongshu-user-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.muying</groupId>
+            <artifactId>xiaohongshu-count-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.muying</groupId>
+            <artifactId>xiaohongshu-distributed-id-generator-api</artifactId>
         </dependency>
 
         <!-- 业务接口日志组件 -->
@@ -115,6 +99,52 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-3-starter</artifactId>
+        </dependency>
+
+        <!-- Redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!-- Redis 连接池 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
+
+        <!-- Caffeine 本地缓存 -->
+        <dependency>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>checker-qual</artifactId>
+                    <groupId>org.checkerframework</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>error_prone_annotations</artifactId>
+                    <groupId>com.google.errorprone</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- Rocket MQ -->
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-spring-boot-starter</artifactId>
+        </dependency>
+
+        <!-- Sentinel 流量治理 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
+        <!-- 以 Nacos 作为 Sentinel 的数据源 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
         </dependency>
 
 

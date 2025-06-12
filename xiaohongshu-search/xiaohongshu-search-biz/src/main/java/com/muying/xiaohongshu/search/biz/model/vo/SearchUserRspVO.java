@@ -32,7 +32,7 @@ public class SearchUserRspVO {
     /**
      * 小哈书ID
      */
-    private String xiaohashuId;
+    private String xiaohongshuId;
 
     /**
      * 笔记发布总数

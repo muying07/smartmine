@@ -16,6 +16,11 @@
     <description>Key-Value 键值存储业务层</description>
 
     <dependencies>
+        <!-- Rocket MQ -->
+        <dependency>
+            <groupId>org.apache.rocketmq</groupId>
+            <artifactId>rocketmq-spring-boot-starter</artifactId>
+        </dependency>
         <!-- 业务接口日志组件 -->
         <dependency>
             <groupId>com.muying</groupId>

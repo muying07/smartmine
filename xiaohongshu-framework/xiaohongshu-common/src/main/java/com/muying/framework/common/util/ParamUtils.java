@@ -51,7 +51,7 @@ public final class ParamUtils {
      * @param xiaohashuId
      * @return
      */
-    public static boolean checkXiaohashuId(String xiaohashuId) {
+    public static boolean checkXiaohongshuId(String xiaohashuId) {
         // 检查长度
         if (xiaohashuId.length() < ID_MIN_LENGTH || xiaohashuId.length() > ID_MAX_LENGTH) {
             return false;

@@ -16,7 +16,15 @@
     <description>笔记服务业务层</description>
 
     <dependencies>
-
+        <!-- Mapstruct 属性映射 -->
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.muying</groupId>
+            <artifactId>xiaohongshu-count-api</artifactId>
+        </dependency>
         <!-- Rocket MQ 客户端 -->
         <dependency>
             <groupId>org.apache.rocketmq</groupId>
